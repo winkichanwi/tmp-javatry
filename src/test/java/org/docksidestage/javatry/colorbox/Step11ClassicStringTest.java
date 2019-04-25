@@ -66,7 +66,7 @@ public class Step11ClassicStringTest extends PlainTestCase {
     }
 
     /**
-     * Which value (toString() if non-string) has second-max legnth in color-boxes? (without sort)<br>
+     * Which value (toString() if non-string) has second-max legnth in color-boxes? (without sort) <br>
      * (カラーボックスに入ってる値 (文字列以外はtoString()) の中で、二番目に長い文字列は？ (ソートなしで))
      */
     public void test_length_findSecondMax() {
@@ -107,15 +107,15 @@ public class Step11ClassicStringTest extends PlainTestCase {
     //                                                            indexOf(), lastIndexOf()
     //                                                            ========================
     /**
-     * What number character is starting with "front" of string ending with "front" in color-boxes? <br>
-     * (あなたのカラーボックスに入ってる "front" で終わる文字列で、"front" は何文字目から始まる？)
+     * What number character is starting with first "front" of string ending with "front" in color-boxes? <br>
+     * (カラーボックスに入ってる "front" で終わる文字列で、最初の "front" は何文字目から始まる？)
      */
     public void test_indexOf_findIndex() {
     }
 
     /**
      * What number character is starting with the late "ど" of string containing plural "ど"s in color-boxes? (e.g. "どんどん" => 3) <br>
-     * (あなたのカラーボックスに入ってる「ど」を二つ以上含む文字列で、最後の「ど」は何文字目から始まる？ (e.g. "どんどん" => 3))
+     * (カラーボックスに入ってる「ど」を二つ以上含む文字列で、最後の「ど」は何文字目から始まる？ (e.g. "どんどん" => 3))
      */
     public void test_lastIndexOf_findIndex() {
     }
