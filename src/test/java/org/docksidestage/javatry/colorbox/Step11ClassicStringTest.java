@@ -19,6 +19,7 @@ import java.util.List;
 
 import org.docksidestage.bizfw.colorbox.ColorBox;
 import org.docksidestage.bizfw.colorbox.color.BoxColor;
+import org.docksidestage.bizfw.colorbox.space.BoxSpace;
 import org.docksidestage.javatry.colorbox.base.YourPrivateRoom;
 import org.docksidestage.unit.PlainTestCase;
 
@@ -48,7 +49,7 @@ public class Step11ClassicStringTest extends PlainTestCase {
         BoxColor boxColor = colorBox.getColor();
         String colorName = boxColor.getColorName();
         int answer = colorName.length();
-        log(answer, colorName); // also show name for visual check
+        log("最初のカラーボックスの色の名前は: {}, 文字数は: {}", answer, colorName); // also show name for visual check
     }
 
     /**
@@ -56,6 +57,21 @@ public class Step11ClassicStringTest extends PlainTestCase {
      * (カラーボックスに入ってる文字列の中で、一番長い文字列は？)
      */
     public void test_length_findMax() {
+        List<ColorBox> colorBoxList = new YourPrivateRoom().getColorBoxList();
+        String maxStr = null;
+        for (ColorBox colorBox : colorBoxList) {
+            List<BoxSpace> boxSpaceList = colorBox.getSpaceList();
+            for (BoxSpace boxSpace : boxSpaceList) {
+                Object content = boxSpace.getContent();
+                if (content instanceof String) {
+                    if (maxStr == null || ((String) content).length() > maxStr.length()) {
+                        maxStr = (String) content;
+                    }
+                }
+            }
+        }
+
+        log(maxStr != null ? "一番長い文字列は: " + maxStr : "文字列は存在しない");
     }
 
     /**
