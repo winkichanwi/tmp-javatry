@@ -29,7 +29,12 @@ public class Step19DevilTest extends PlainTestCase {
     //                                                                        Devil Parade
     //                                                                        ============
     /**
-     * (nullを含んでいるカラーボックスの色の名前の3文字目の文字で色の名前が終わっているカラーボックスの深さの十の位の数字が小数点第二桁目になっているスペースの中のリストの中のBigDecimalの一の位の数字と同じ色の長さのカラーボックスの一番下のスペースに入っているものは？)
+     * What is the content in low space of color-box
+     * of which lengths of the color is same as first place number of BigDecimal value first found in List in box spaces,
+     * that the second decimal place is same as tens place of depth of the color-box
+     * of which color name ends with third character of color-box that contains null as content? <br>
+     * (nullを含んでいるカラーボックスの色の名前の3文字目の文字で色の名前が終わっているカラーボックスの深さの十の位の数字が小数点第二桁目になっている
+     * スペースの中のリストの中で最初に見つかるBigDecimalの一の位の数字と同じ色の長さのカラーボックスの一番下のスペースに入っているものは？)
      */
     public void test_too_long() {
     }
@@ -38,6 +43,7 @@ public class Step19DevilTest extends PlainTestCase {
     //                                                                      Java Destroyer
     //                                                                      ==============
     /**
+     * What string of toString() is BoxSize of red color-box after changing height to 160 (forcedly in this method)? <br>
      * ((このテストメソッドの中だけで無理やり)赤いカラーボックスの高さを160に変更して、BoxSizeをtoString()すると？)
      */
     public void test_looks_like_easy() {
@@ -47,7 +53,8 @@ public class Step19DevilTest extends PlainTestCase {
     //                                                                        Meta Journey
     //                                                                        ============
     /**
-     * (カラーボックスに入っているFunctionalInterfaceアノテーションが付与されているインターフェースのFunctionnalメソッドの戻り値は？)
+     * What value is returned from functional method of interface that has FunctionalInterface annotation in color-boxes? <br> 
+     * (カラーボックスに入っているFunctionalInterfaceアノテーションが付与されているインターフェースのFunctionalメソッドの戻り値は？)
      */
     public void test_be_frameworker() {
     }
