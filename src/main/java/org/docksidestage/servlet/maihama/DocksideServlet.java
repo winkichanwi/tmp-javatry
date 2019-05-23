@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-package org.docksidestage.app.maihama;
+package org.docksidestage.servlet.maihama;
 
 import java.io.IOException;
 
@@ -42,9 +42,6 @@ public class DocksideServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //        PrintWriter out = resp.getWriter();
-        //        out.append("<html><body>dockside stage is in sea</body></html>");
-        // TODO jflute cannot use JSP (NullPointer in JSP process) (2019/04/11)
         req.getRequestDispatcher("/WEB-INF/view/maihama/dockside.jsp").forward(req, resp);
     }
 }
