@@ -20,41 +20,48 @@ import java.math.BigDecimal;
 import org.docksidestage.unit.PlainTestCase;
 
 /**
+ * The test of variable. <br>
+ * Write your answer of the question of JavaDoc before test execution. <br>
+ * (テストを実行する前にJavaDocの質問に対する答えをコメントとして書いてみましょう)
  * @author jflute
  */
 public class Step01VariableTest extends PlainTestCase {
 
     /**
-     * Stringの変数 sea を宣言して、"mystic" で初期化して、log()で出力すると？
+     * What string is sea variable at the method end? <br>
+     * (メソッド終了時の変数 sea の中身は？)
      */
     public void test_variable_basic() { // execute after answer
         String sea = "mystic";
-        log(sea); // your answer => mystic
+        log(sea); // your answer: mystic
     }
 
     /**
-     * 最終的な変数 sea の中身は？
+     * What string is sea variable at the method end? <br>
+     * (メソッド終了時の変数 sea の中身は？)
      */
     public void test_variable_reassigned_basic() { // execute after answer
         String sea = "mystic";
         String land = "oneman";
         sea = land;
-        log(sea); // your answer =>
+        log(sea); // your answer:
     }
 
     /**
-     * 最終的な変数 sea の中身は？
+     * What string is sea variable at the method end? <br>
+     * (メソッド終了時の変数 sea の中身は？)
      */
     public void test_variable_reassigned_int() { // execute after answer
         int sea = 94;
         int land = 415;
         sea = land;
         land++;
-        log(sea); // your answer =>
+        log(sea); // your answer:
     }
 
     /**
-     * 最終的な変数 sea の中身は？
+     * What string is sea variable at the method end? <br>
+     * (メソッド終了時の変数 sea の中身は？)
      */
     public void test_variable_reassigned_BigDecimal() { // execute after answer
         BigDecimal sea = new BigDecimal(94);
@@ -62,6 +69,6 @@ public class Step01VariableTest extends PlainTestCase {
         sea = land;
         sea = land.add(new BigDecimal(1));
         sea.add(new BigDecimal(1));
-        log(sea); // your answer =>
+        log(sea); // your answer:
     }
 }
